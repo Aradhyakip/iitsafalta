@@ -13,3 +13,7 @@ ALL LECTURES UNLOCK FOR FREE. NO PAYMENT NO ACCOUNT.
 ## NOTICE
 
 - Downloading videos doesnt work as of now. Please wait for another implimentation.
+
+## TAGS
+
+free iitsafalta lectures, catalyser free lectures, catalyser mod apk, iitsafalta mod apk, iit, iit safalta, mod apk, catalyser hack, iitsafalta hack, neet free lectures, jee shikhar, analyzer, jeeshikhar, catalyser.
