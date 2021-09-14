@@ -1,5 +1,7 @@
 # App Server for Patched IIT SAFALTA
 
+ALL LECTURES UNLOCK FOR FREE. NO PAYMENT NO ACCOUNT.
+
 ## Installation
 
 - Go [HERE](https://github.com/oveeyashende/server/releases).
