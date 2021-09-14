@@ -176,10 +176,13 @@ def iitsafalta(request: HttpRequest, version: int, endpoint: str) -> JsonRespons
     # Modifying Host because of the Reverse Proxy running on AWS for IIT Safalta.
     __head = dict(request.headers)
     __head['Host'] = 'iitsafalta.in'
-    # __head['x-api-key'] = "Guru#Kul@m4404"
+    
+    # Modifiying DEVICE_ID so 1 account can be shared.
+    json = loads(request_body.decode('utf-8'))
+    json['device_id'] = "4982f1a53cf4c467"
 
     resp = post(url=f"https://iitsafalta.in/apis_android/api_{version}/iitsafalta/{endpoint}",
-                json=loads(request_body.decode('utf-8')),
+                json=json,
                 auth=('admin', '1234'),
                 headers=__head
                 )

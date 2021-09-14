@@ -26,5 +26,4 @@ urlpatterns = [
     path('proxy/generic/<path:url>', generic),
     path('proxy/export_json', export_json_requests),
     path('proxy/export_http', export_http_requests),
-    path('apis_android/api_<int:version>/iitsafalta/<str:endpoint>', iitsafalta)
 ]
