@@ -1,0 +1,6 @@
+django
+django-heroku
+requests
+whitenoise
+gunicorn; sys_platform == 'linux'
+
