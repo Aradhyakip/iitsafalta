@@ -14,6 +14,7 @@ IITSAFALTA_BYPASS = {
     "storeVideoActivity": {'message': 'Success', 'flag': 'Y'},
     "parentActivity": {'message': 'Success', 'flag': 'Y'},
     "checkSubscriptionValidity": {"message": "Subscribed", "flag": "N"},
+    "logout":{"message":"You sucessfully logout", "flag":"Y"}
 }
 
 
@@ -178,11 +179,11 @@ def iitsafalta(request: HttpRequest, version: int, endpoint: str) -> JsonRespons
     __head['Host'] = 'iitsafalta.in'
     
     # Modifiying DEVICE_ID so 1 account can be shared.
-    json = loads(request_body.decode('utf-8'))
-    json['device_id'] = "4982f1a53cf4c467"
+    sent = loads(request_body.decode('utf-8'))
+    sent['device_id'] = "4982f1a53cf4c467"
 
     resp = post(url=f"https://iitsafalta.in/apis_android/api_{version}/iitsafalta/{endpoint}",
-                json=json,
+                json=sent,
                 auth=('admin', '1234'),
                 headers=__head
                 )
@@ -194,7 +195,7 @@ def iitsafalta(request: HttpRequest, version: int, endpoint: str) -> JsonRespons
     JSONPOSTRequest(
         url=f"https://iitsafalta.in/apis_android/api_{version}/iitsafalta/{endpoint}",
         headers=dict(request.headers),
-        sent_data=loads(request_body.decode('utf-8')),
+        sent_data=sent,
         received_data=json
     ).save()
 
