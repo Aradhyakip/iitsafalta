@@ -7,7 +7,7 @@ ALL LECTURES UNLOCK FOR FREE. NO PAYMENT NO ACCOUNT.
 - Go [HERE](https://github.com/oveeyashende/server/releases).
 - Download the 'application.apk'.
 - Install the apk on device. (You may have to turn on Unknown Sources or Allow Installation from a Particular Source.)
-- Open the application and wait for initlization to complete.
+- Open the application and wait for initlization to complete.it may take a few minutes.
 - If app crashes or gets stuck, please relaunch the app.
 
 ## NOTICE
